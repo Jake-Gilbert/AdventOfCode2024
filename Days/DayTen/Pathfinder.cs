@@ -102,7 +102,7 @@
         bool Search((int, int) coordinate, int rowOffset, int colOffset, int target, out (int, int) validRoute)
         {
             var row = coordinate.Item1 + rowOffset;
-            var col = coordinate.Item2 + colOffset;// % 10;
+            var col = coordinate.Item2 + colOffset;
             if (OutOfBounds(row, col))
             {
                 validRoute = (-1, -1);
